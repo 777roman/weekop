@@ -1,5 +1,7 @@
 package pl.mr.weekop.dao;
 
+import pl.mr.weekop.dao.VoteDAOImpl;
+
 public class MysqlDAOFactory extends DAOFactory{
     @Override
     public DiscoveryDAO getDiscoveryDAO() {

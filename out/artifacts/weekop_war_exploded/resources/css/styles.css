@@ -80,3 +80,7 @@ body {
 .centered{
     margin: 0 auto;
 }
+img, input{
+    display: inline-block;
+    vertical-align: middle;
+}

@@ -1,5 +1,6 @@
 package pl.mr.weekop.controller;
 
+import org.springframework.transaction.annotation.Transactional;
 import pl.mr.weekop.service.UserService;
 
 import javax.servlet.ServletException;
@@ -20,8 +21,7 @@ public class RegisterController extends HttpServlet {
         userService.addUser(username,email,password);
         response.sendRedirect(request.getContextPath()+"/");
     }
-
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("register.jsp").forward(request,response);
+        request.getRequestDispatcher("WEB-INF/register.jsp").forward(request,response);
     }
 }

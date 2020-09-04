@@ -27,7 +27,7 @@ public class DiscoveryDAOImpl implements DiscoveryDAO {
             "SELECT user.user_id, username, email, is_active, password, discovery_id, name, description, url, date, up_vote, down_vote "
                     + "FROM discovery LEFT JOIN user ON discovery.user_id=user.user_id;";
     private static final String UPDATE_DISCOVERY = "UPDATE discovery SET name=:name, description=:description, url=:url, user_id=:user_id, date=:date, up_vote=:up_vote, down_vote=:down_vote "
-            +"WHERE discover_id=:discovery_id;";
+            +"WHERE discovery_id=:discovery_id;";
     private static final String READ_DISCOVERY =
             "SELECT user.user_id, username, email, is_active, password, discovery_id, name, description, url, date, up_vote, down_vote "
                     + "FROM discovery LEFT JOIN user ON discovery.user_id=user.user_id WHERE discovery_id=:discovery_id;";
